@@ -1,3 +1,15 @@
+# Author: 
+#    Filip Pazdera
+#    Natalie Zacharova
+#
+# Requirements covered: 
+#    REQ_01_01
+#    REQ_02_02
+#    REQ_03_03
+#    REQ_04_04
+#    REQ_05_05
+#    REQ_06_06
+
 *** Settings ***
 Library  Selenium2Library
 Resource  ../Keywords/BrowserKeywords.robot
