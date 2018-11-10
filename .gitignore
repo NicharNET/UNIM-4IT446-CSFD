@@ -1,0 +1,5 @@
+libspecs/
+.settings/
+.idea/
+*.project
+*.png
