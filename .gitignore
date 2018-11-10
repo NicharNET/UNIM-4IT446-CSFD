@@ -3,3 +3,5 @@ libspecs/
 .idea/
 *.project
 *.png
+*.html
+output.xml
