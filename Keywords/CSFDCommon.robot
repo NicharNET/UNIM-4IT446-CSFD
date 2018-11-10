@@ -25,12 +25,16 @@ Open CSFD Nav Item
     ${current_url}=  Get Location
     Should Be Equal As Strings  ${current_url}  ${navUrl}
     
-AgreeAndClick
+Agree And Click
     [Arguments]    ${checkbox}    ${click}
+    Execute Javascript    window.scrollTo(0,document.body.scrollHeight);
     Select Checkbox    ${checkbox}
     Click Button    ${click}     
 
-ValidMessage
-    [Arguments]    ${element}    ${message}
-    Verify Message Element Is On Page    ${element}
-    Wait Until Page Contains    ${element} ${message} 
+Verify And Check Message
+    [Arguments]    ${element}    ${msg}
+    Verify Message Element Is On Page    ${element} 
+    Wait Until Page Contains    ${msg}  
+    
+    
+    
