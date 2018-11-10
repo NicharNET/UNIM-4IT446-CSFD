@@ -36,5 +36,18 @@ Verify And Check Message
     Verify Message Element Is On Page    ${element} 
     Wait Until Page Contains    ${msg}  
     
+Login to CSFD
+    [Arguments]    ${user}    ${pwd}
+    Click Link    ${login}
+    Input Text    ${inputUser}   ${user} 
+    Input Password    ${inputPassword}    ${pwd}
+    Click Button    ${btnLogin}
+    
+Logout
+    Click Link    ${logout}
+    
+Invalid
+    Wait until page contains    ${LoginMessage}    
+   
     
     

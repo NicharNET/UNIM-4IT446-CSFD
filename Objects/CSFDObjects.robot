@@ -11,7 +11,7 @@ ${non_existing_nickname}    totojjenahoddnaprezdivka
 ${incorrect_email_msg}  Zadej korektní e-mail.
 ${existing_email}   natzachar91@gmail.com
 ${success_reset}     xpath=//*[@id="page-wrapper"]/div[2]
-#Login
+#Register
 ${registerUrl}    https://www.csfd.cz/registrace/
 ${registerNav}    xpath=//*[@id="user-menu"]/ul/li[2]/a
 ${registerNicknameInput}    xpath=//*[@id="frm-registerForm-nick"]
@@ -28,3 +28,11 @@ ${registerMsg}    xpath=//*[@id="frm-registerForm"]/ul/li
 ${registerMsgNickname}    Tato přezdívka je již používána, zvol si prosím jinou.
 ${registerMsgEmail}    Tato e-mailová adresa je již používána, použij prosím jinou.
 ${registerMsgBirth}    Datum musí být zadáno ve formátu "dd.mm.rrrr" nebo "mm-dd-rrrr" nebo "mm/dd/rrrr", tedy například "28.11.1983" nebo "06-28-1983" nebo "06/28/1983".
+#Login
+${loginMessage}    Přihlášení se nezdařilo, přezdívka či heslo je nesprávné. Zadáváš správně velká a malá písmena v heslu?
+${inputUser}    id=frm-form-username    
+${inputPassword}    id=frm-form-password    
+${btnLogin}    name=send
+${login}    Přihlásit
+${logout}    Odhlásit 
+${checkUser}    id=user-menu

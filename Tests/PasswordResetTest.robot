@@ -3,8 +3,8 @@
 #
 # Requirements covered: 
 #    REQ_01_01
-#    REQ_02_02
-#    REQ_03_03
+#    REQ_01_02
+#    REQ_01_03
 
 *** Settings ***
 Library  Selenium2Library
