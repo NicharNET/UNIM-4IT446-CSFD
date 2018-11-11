@@ -60,3 +60,9 @@ Check Rating
     Should Be True    ${number}<100    
     Should Be True    ${number}>0    
     
+Verify Label Message
+    [Arguments]  ${nav}    ${label}    ${labelText}
+    Click On CSFD Nav Item              ${nav}
+    Verify Message Element Is On Page   ${label}
+    ${string}=    Get Text  ${label}
+    Should Match Regexp    ${string}    ${labelText}

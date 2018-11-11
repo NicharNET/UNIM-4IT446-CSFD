@@ -19,16 +19,27 @@ Test Teardown   Capture Screenshot And Close Browser
 *** Test Cases ***
 
 Verify Rating Of The Best Movie
-    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
-    Click On CSFD Nav Item    ${firstMovieNav}
-    Check Rating              ${rating}        
+    Open CSFD Nav Item                  ${ratingsNav}     ${ratingsUrl}
+    Click On CSFD Nav Item              ${firstMovieNav}
+    Check Rating                        ${rating}        
     
 Verify Rating Of The Worst Movie
-    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
-    Click On CSFD Nav Item    ${worstMoviesNav}   
-    Click On CSFD Nav Item    ${firstMovieNav}  
+    Open CSFD Nav Item                  ${ratingsNav}     ${ratingsUrl}
+    Click On CSFD Nav Item              ${worstMoviesNav}   
+    Click On CSFD Nav Item              ${firstMovieNav}  
     
 Verify Movie Labels
-    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
-    Click On CSFD Nav Item    ${firstMovieNav}
-    Element Should Contain    ${directorNav}    Režie     
+    Open CSFD Nav Item                  ${ratingsNav}     ${ratingsUrl}
+    Click On CSFD Nav Item              ${firstMovieNav}
+    Element Should Contain              ${directorNav}    Režie     
+    Verify Message Element Is On Page   ${labelNav}    
+    Verify Message Element Is On Page   ${posterNav}    
+    Verify Message Element Is On Page   ${contentNav}
+    
+Verify Movie Card Sections
+    Open CSFD Nav Item                  ${ratingsNav}     ${ratingsUrl}
+    Click On CSFD Nav Item              ${firstMovieNav}
+    Click On CSFD Nav Item              ${overviewTab}
+    Verify Label Message  	            ${commentsTab}    ${commentsTabLabel}    ${commentsTabLabelRegexp}
+    Verify Label Message  	            ${triviaTab}      ${triviaTabLabel}      ${triviaTabLabelRegexp}
+    
