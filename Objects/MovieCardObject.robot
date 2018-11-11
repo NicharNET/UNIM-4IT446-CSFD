@@ -26,5 +26,6 @@ ${commentsTabLabel}          xpath=//*[@id="main"]/div[4]/div[2]/h2
 ${triviaTab}                 xpath=//*[@id="main"]/div[4]/div[1]/ul/li[3]/a
 ${triviaTabLabel}            xpath=//*[@id="main"]/div[4]/h2
 
+${director}                  Režie
 ${commentsTabLabelRegexp}    Komentáře uživatelů k filmu \\([\\d ]+\\) 
 ${triviaTabLabelRegexp}      Zajímavosti k filmu \\([\\d ]+\\)  

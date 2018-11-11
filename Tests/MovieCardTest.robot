@@ -31,7 +31,7 @@ Verify Rating Of The Worst Movie
 Verify Movie Labels
     Open CSFD Nav Item                  ${ratingsNav}     ${ratingsUrl}
     Click On CSFD Nav Item              ${firstMovieNav}
-    Element Should Contain              ${directorNav}    Režie     
+    Element Should Contain              ${directorNav}    ${director}     
     Verify Message Element Is On Page   ${labelNav}    
     Verify Message Element Is On Page   ${posterNav}    
     Verify Message Element Is On Page   ${contentNav}
