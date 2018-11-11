@@ -1,6 +1,6 @@
 # UNIM-4IT446-CSFD
 
-Automated testing of [ČSFD website](https://www.csfd.cz/) as a group semestral work.
+Automated testing of [ČSFD website](https://www.csfd.cz/) as a group semestral work based on [Robot Framework](http://robotframework.org/) and Selenium2Library and Python.
 
 # Contributors
 
