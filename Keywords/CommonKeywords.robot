@@ -8,7 +8,13 @@ Click On CSFD Nav Item
     Wait Until Element Is Visible   ${navItem}
     Page Should Contain Element    ${navItem}
     Click Link   ${navItem}
-
+    
+Click On CSFD Button
+    [Arguments]  ${button}
+    Wait Until Element Is Visible   ${button}
+    Page Should Contain Element    ${button}
+    Click Button   ${button}
+    
 Insert Into Text Item Field
     [Arguments]  ${inputItem}   ${value}
     Wait Until Element Is Visible   ${inputItem}
@@ -36,19 +42,6 @@ Verify And Check Message
     [Arguments]    ${element}    ${msg}
     Verify Message Element Is On Page    ${element} 
     Wait Until Page Contains    ${msg}  
-    
-Login to CSFD
-    [Arguments]    ${user}    ${pwd}
-    Click Link    ${login}
-    Input Text    ${inputUser}   ${user} 
-    Input Password    ${inputPassword}    ${pwd}
-    Click Button    ${btnLogin}
-    
-Logout
-    Click Link    ${logout}
-    
-Invalid
-    Wait until page contains    ${LoginMessage}    
    
 Check Rating    
     [Arguments]  ${navItem}

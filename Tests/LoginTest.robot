@@ -3,8 +3,8 @@
 #
 # Requirements covered: 
 #    REQ_01_07
-#    REQ_0!_08
-#    REQ_0!_09
+#    REQ_01_08
+#    REQ_01_09
 
 *** Settings ***
 Library  Selenium2Library
@@ -19,9 +19,17 @@ Test Teardown   Capture Screenshot And Close Browser
 
 *** Test Cases ***
 CSFD Valid Login and logout
-    Login to CSFD    ${validUser}    ${validPassword}
-    Logout
+    Click On CSFD Nav Item    ${login}
+    Input Text    ${inputUser}   ${validUser} 
+    Input Password    ${inputPassword}    ${validPassword}
+    Click On CSFD Button      ${btnLogin}
+    Verify Label Message    ${usernameNav}    ${usernameLabelNav}    ${validUser}
+    Click On CSFD Nav Item    ${logout}
+    
 
 CSFD Invalid Login
-    Login to CSFD    ${invalidUser}    ${invalidPassword}
-    Invalid
+    Click On CSFD Nav Item    ${login}
+    Input Text    ${inputUser}   ${invalidUser} 
+    Input Password    ${inputPassword}    ${invalidPassword}
+    Click On CSFD Button    ${btnLogin}
+    Wait until page contains    ${invalidLoginMessage}
