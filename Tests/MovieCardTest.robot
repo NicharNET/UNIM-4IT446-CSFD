@@ -18,15 +18,15 @@ Test Teardown   Capture Screenshot And Close Browser
 
 *** Test Cases ***
 
-#Verify Rating Of The Best Movie
-#    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
-#    Click On CSFD Nav Item    ${firstMovieNav}
-#    Check Rating              ${rating}        
+Verify Rating Of The Best Movie
+    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
+    Click On CSFD Nav Item    ${firstMovieNav}
+    Check Rating              ${rating}        
     
-#Verify Rating Of The Worst Movie
- #   Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
-#    Click On CSFD Nav Item    ${worstMoviesNav}   
-#    Click On CSFD Nav Item    ${firstMovieNav}  
+Verify Rating Of The Worst Movie
+    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
+    Click On CSFD Nav Item    ${worstMoviesNav}   
+    Click On CSFD Nav Item    ${firstMovieNav}  
     
 Verify Movie Labels
     Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
