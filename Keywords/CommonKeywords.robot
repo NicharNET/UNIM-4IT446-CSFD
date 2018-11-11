@@ -1,5 +1,6 @@
 *** Settings ***
 Library    Selenium2Library
+Library    String
 
 *** Keywords ***
 Click On CSFD Nav Item
@@ -49,5 +50,13 @@ Logout
 Invalid
     Wait until page contains    ${LoginMessage}    
    
-    
+Check Rating    
+    [Arguments]  ${navItem}
+    Wait Until Element Is Visible   ${navItem}
+    Page Should Contain Element    ${navItem}
+    ${percentage}=    Get Text    ${navItem}
+    ${number}=     Replace String    ${percentage}    %   .0
+    ${number}=     Convert To Number    ${number}     
+    Should Be True    ${number}<100    
+    Should Be True    ${number}>0    
     

@@ -7,17 +7,28 @@
 #    REQ_02_03
 
 *** Settings ***
-Library  Selenium2Library
+Library    Selenium2Library
 Resource  ../Keywords/BrowserKeywords.robot
 Resource  ../Settings/LoginSettings.robot
-Resource  ../Objects/CSFDObjects.robot
-Resource  ../Keywords/CSFDCommon.robot
+Resource  ../Keywords/CommonKeywords.robot
+Resource  ../Objects/MovieCardObject.robot
 
-Test Setup  Open Browser And Maximize Window  ${browser}   ${url}
+Test Setup      Open Browser And Maximize Window  ${browser}   ${url}
 Test Teardown   Capture Screenshot And Close Browser
 
 *** Test Cases ***
 
-To Be Done Soon
-    Open CSFD Nav Item  ${resetPswNav}  ${resetPswUrl}
+#Verify Rating Of The Best Movie
+#    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
+#    Click On CSFD Nav Item    ${firstMovieNav}
+#    Check Rating              ${rating}        
     
+#Verify Rating Of The Worst Movie
+ #   Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
+#    Click On CSFD Nav Item    ${worstMoviesNav}   
+#    Click On CSFD Nav Item    ${firstMovieNav}  
+    
+Verify Movie Labels
+    Open CSFD Nav Item        ${ratingsNav}    ${ratingsUrl}
+    Click On CSFD Nav Item    ${firstMovieNav}
+    Element Should Contain    ${directorNav}    Režie     

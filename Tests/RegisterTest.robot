@@ -10,8 +10,9 @@
 Library  Selenium2Library
 Resource  ../Keywords/BrowserKeywords.robot
 Resource  ../Settings/LoginSettings.robot
-Resource  ../Objects/CSFDObjects.robot
-Resource  ../Keywords/CSFDCommon.robot
+Resource  ../Objects/RegisterObject.robot
+Resource  ../Objects/ResetPasswordObject.robot
+Resource  ../Keywords/CommonKeywords.robot
 
 Test Setup  Open Browser And Maximize Window  ${browser}   ${url}
 Test Teardown   Capture Screenshot And Close Browser

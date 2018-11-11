@@ -9,10 +9,10 @@
 *** Settings ***
 Library  Selenium2Library
 Resource  ../Keywords/BrowserKeywords.robot
+Resource  ../Keywords/CommonKeywords.robot
 Resource  ../Settings/LoginSettings.robot
-Resource  ../Objects/CSFDObjects.robot
-Resource  ../Keywords/CSFDCommon.robot
-Resource    ../Settings/Credentials.robot
+Resource  ../Objects/LoginObjects.robot
+Resource  ../Settings/Credentials.robot
 
 Test Setup  Open Browser And Maximize Window  ${browser}   ${url}
 Test Teardown   Capture Screenshot And Close Browser
@@ -25,4 +25,3 @@ CSFD Valid Login and logout
 CSFD Invalid Login
     Login to CSFD    ${invalidUser}    ${invalidPassword}
     Invalid
-    
