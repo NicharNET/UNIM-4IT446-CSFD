@@ -10,6 +10,7 @@
 Library  Selenium2Library
 Resource  ../Keywords/BrowserKeywords.robot
 Resource  ../Settings/BrowserSettings.robot
+Resource  ../Settings/Credentials.robot
 Resource  ../Objects/RegisterObject.robot
 Resource  ../Objects/ResetPasswordObject.robot
 Resource  ../Keywords/CommonKeywords.robot

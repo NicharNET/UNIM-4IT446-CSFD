@@ -8,13 +8,13 @@ Click On CSFD Nav Item
     Wait Until Element Is Visible   ${navItem}
     Page Should Contain Element    ${navItem}
     Click Link   ${navItem}
-    
+
 Click On CSFD Button
     [Arguments]  ${button}
     Wait Until Element Is Visible   ${button}
     Page Should Contain Element    ${button}
     Click Button   ${button}
-    
+
 Insert Into Text Item Field
     [Arguments]  ${inputItem}   ${value}
     Wait Until Element Is Visible   ${inputItem}
@@ -37,28 +37,28 @@ Open CSFD Nav Item
     Click On CSFD Nav Item    ${navItem}
     ${current_url}=  Get Location
     Should Be Equal As Strings  ${current_url}  ${navUrl}
-    
+
 Agree And Click
     [Arguments]    ${checkbox}    ${click}
     Execute Javascript    window.scrollTo(0,document.body.scrollHeight);
     Select Checkbox    ${checkbox}
-    Click Button    ${click}     
+    Click Button    ${click}
 
 Verify And Check Message
     [Arguments]    ${element}    ${msg}
-    Verify Message Element Is On Page    ${element} 
-    Wait Until Page Contains    ${msg}  
-   
-Check Rating    
+    Verify Message Element Is On Page    ${element}
+    Wait Until Page Contains    ${msg}
+
+Check Rating
     [Arguments]  ${navItem}
     Wait Until Element Is Visible   ${navItem}
     Page Should Contain Element    ${navItem}
     ${percentage}=    Get Text    ${navItem}
     ${number}=     Replace String    ${percentage}    %   .0
-    ${number}=     Convert To Number    ${number}     
-    Should Be True    ${number}<100    
-    Should Be True    ${number}>0    
-    
+    ${number}=     Convert To Number    ${number}
+    Should Be True    ${number}<100
+    Should Be True    ${number}>0
+
 Verify Label Message
     [Arguments]  ${nav}    ${label}    ${labelText}
     Click On CSFD Nav Item              ${nav}

@@ -19,17 +19,16 @@ Test Teardown   Capture Screenshot And Close Browser
 
 *** Test Cases ***
 CSFD Valid Login and logout
-    Click On CSFD Nav Item    ${login}
-    Input Text    ${inputUser}   ${validUser} 
-    Input Password    ${inputPassword}    ${validPassword}
+    Open CSFD Nav Item  ${login}  ${loginUrl}
+    Insert Into Text Item Field     ${inputUser}   ${validUser}
+    Insert Into Password Field   ${inputPassword}    ${validPassword}
     Click On CSFD Button      ${btnLogin}
     Verify Label Message    ${usernameNav}    ${usernameLabelNav}    ${validUser}
-    Click On CSFD Nav Item    ${logout}
-    
+    Open CSFD Nav Item  ${logout}   ${loginUrl}
 
 CSFD Invalid Login
-    Click On CSFD Nav Item    ${login}
-    Input Text    ${inputUser}   ${invalidUser} 
-    Input Password    ${inputPassword}    ${invalidPassword}
+    Open CSFD Nav Item  ${login}  ${loginUrl}
+    Insert Into Text Item Field     ${inputUser}   ${invalidUser}
+    Insert Into Password Field   ${inputPassword}    ${invalidPassword}
     Click On CSFD Button    ${btnLogin}
     Wait until page contains    ${invalidLoginMessage}
