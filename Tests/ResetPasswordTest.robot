@@ -9,7 +9,7 @@
 *** Settings ***
 Library  Selenium2Library
 Resource  ../Keywords/BrowserKeywords.robot
-Resource  ../Settings/LoginSettings.robot
+Resource  ../Settings/BrowserSettings.robot
 Resource  ../Objects/ResetPasswordObject.robot
 Resource  ../Keywords/CommonKeywords.robot
 
@@ -24,7 +24,7 @@ Reset password wrong email format test
     Click Button    ${resetEmailBtn}
     Alert Should Be Present     text=${incorrect_email_msg}
 
-Reset password with non existing nickname fail test
+Reset password with non existing nickname test
     Open CSFD Nav Item  ${resetPswNav}  ${resetPswUrl}
     Insert Into Text Item Field     ${resetNicknameInput}   ${non_existing_nickname}
     Click Button    ${resetNicknameBtn}

@@ -9,7 +9,7 @@
 *** Settings ***
 Library  Selenium2Library
 Resource  ../Keywords/BrowserKeywords.robot
-Resource  ../Settings/LoginSettings.robot
+Resource  ../Settings/BrowserSettings.robot
 Resource  ../Objects/RegisterObject.robot
 Resource  ../Objects/ResetPasswordObject.robot
 Resource  ../Keywords/CommonKeywords.robot

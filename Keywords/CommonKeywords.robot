@@ -21,6 +21,12 @@ Insert Into Text Item Field
     Page Should Contain Element    ${inputItem}
     Input Text    ${inputItem}    ${value}
 
+Insert Into Password Field
+    [Arguments]  ${inputItem}   ${value}
+    Wait Until Element Is Visible   ${inputItem}
+    Page Should Contain Element    ${inputItem}
+    Input Password    ${inputItem}    ${value}
+
 Verify Message Element Is On Page
     [Arguments]  ${message}
     Wait Until Element Is Visible   ${message}
