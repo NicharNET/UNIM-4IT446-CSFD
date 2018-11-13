@@ -23,11 +23,6 @@ Verify Rating Of The Best Movie
     Click On CSFD Nav Item              ${firstMovieNav}
     Check Rating                        ${rating}        
     
-Verify Rating Of The Worst Movie
-    Open CSFD Nav Item                  ${ratingsNav}     ${ratingsUrl}
-    Click On CSFD Nav Item              ${worstMoviesNav}   
-    Check Rating                        ${rating} 
-    
 Verify Movie Labels
     Open CSFD Nav Item                  ${ratingsNav}     ${ratingsUrl}
     Click On CSFD Nav Item              ${firstMovieNav}
