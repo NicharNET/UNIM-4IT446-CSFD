@@ -1,4 +1,4 @@
-# UNIM-4IT446-CSFD
+# 4IT446 Software Quality Management | ČSFD
 
 Automated testing of [ČSFD website](https://www.csfd.cz/) as a group semestral work based on [Robot Framework](http://robotframework.org/) and Selenium2Library and Python.
 
