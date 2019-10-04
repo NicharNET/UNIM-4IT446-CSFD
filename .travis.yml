@@ -9,8 +9,4 @@ python:
 - "2.7"
   
 script: 
-- pybot Tests/LoginTest.robot
-- pybot Tests/MovieCardTest.robot
-- pybot Tests/RegisterTest.robot
-- pybot Tests/ResetPasswordTest.robot
-- pybot Tests/SearchTest.robot
+- robot Tests
