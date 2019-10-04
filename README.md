@@ -4,7 +4,7 @@ Automated testing of [ČSFD website](https://www.csfd.cz/) as a group semestral 
 
 # Contributors
 
- - Nikolas Charalambidis as [NicharNET](https://github.com/nicharnet)
+ - Nikolas Charalambidis as [Nikolas Charalambidis](https://github.com/Nikolas-Charalambidis)
  - Barbora Bučková as as [bucb](https://github.com/bucb)
  - Filip Pazdera as [pazf](https://github.com/pazf)
  - Natalie Zacharova as [nzachar](https://github.com/nzachar)
