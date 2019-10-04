@@ -3,7 +3,7 @@ sudo: false
 
 install: 
 - pip install robotframework
-- pip install robotframework-selenium2library"  
+- pip install robotframework-selenium2library
 
 python:
 - "2.7"
