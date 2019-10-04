@@ -13,9 +13,8 @@ python:
   - "3.5"
   
 before_install:
-  - echo $PATH
   - pip install selenium
-  - wget https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
+  - wget https://chromedriver.storage.googleapis.com/2.44/chromedriver_linux64.zip
   - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python3.5.6/bin
   
 before_script:
