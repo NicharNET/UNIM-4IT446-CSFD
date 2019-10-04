@@ -1,0 +1,16 @@
+language: python
+sudo: false
+
+install: 
+- pip install robotframework
+- pip robotframework-selenium2library"  
+
+python:
+- "2.7"
+  
+script: 
+- pybot Tests/LoginTest.robot
+- pybot Tests/MovieCardTest.robot
+- pybot Tests/RegisterTest.robot
+- pybot Tests/ResetPasswordTest.robot
+- pybot Tests/SearchTest.robot
