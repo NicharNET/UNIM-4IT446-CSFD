@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Nikolas-Charalambidis/4IT446.svg?branch=master)](https://travis-ci.org/Nikolas-Charalambidis/4IT446)
 
-# 4IT446 | ČSFD Automated tests
+# ČSFD Automated tests
 
 ## ⚠ No longer maintained nor published
 
